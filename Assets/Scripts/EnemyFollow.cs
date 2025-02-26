@@ -50,6 +50,13 @@ public class EnemyFollow : MonoBehaviour
                 rb.velocity = firePoint.forward * bulletSpeed;
             }
 
+            // Set bullet damage if Bullet script exists
+            Bullet bulletScript = bullet.GetComponent<Bullet>();
+            if (bulletScript != null)
+            {
+                bulletScript.damage = 20f; // Set damage value here
+            }
+
             // Destroy bullet after 5 seconds to avoid clutter
             Destroy(bullet, 5f);
         }

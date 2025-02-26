@@ -24,7 +24,7 @@ public class PlayerHP : MonoBehaviour
     void Die()
     {
         Debug.Log("Player Died!");
-        // You can add death animations, respawn logic, etc.
-        Destroy(gameObject); // Destroys player object for simplicity
+        // Add death effects or game over logic here
+        Destroy(gameObject); // For now, destroy the player on death
     }
 }

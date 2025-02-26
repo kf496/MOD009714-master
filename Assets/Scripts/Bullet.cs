@@ -12,6 +12,7 @@ public class Bullet : MonoBehaviour
         if (playerHealth != null)
         {
             playerHealth.TakeDamage(damage);
+            Debug.Log("Player Hit");
         }
 
         // Destroy the bullet after impact

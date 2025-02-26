@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skyboxes:
+  - {fileID: 2100000, guid: 7f98e7ff226cc8c449a7da08501e09b5, type: 2}
   - {fileID: 2100000, guid: 5717de02911a51e4e8b2fa253aed9fdc, type: 2}
   - {fileID: 2100000, guid: 85a2bc9e5db22d74db1540ef5b278c74, type: 2}
   - {fileID: 2100000, guid: c94d68c9d17a6cb45ab0f280674c0348, type: 2}
@@ -56,7 +57,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 7a407ee272670044e94eca4c1afedc74, type: 2}
   - {fileID: 2100000, guid: 599fab7a9335c8d40a763632d0e16ea4, type: 2}
   - {fileID: 2100000, guid: e700f6bdf87e175479e40a95f874927c, type: 2}
-  - {fileID: 2100000, guid: 7f98e7ff226cc8c449a7da08501e09b5, type: 2}
   - {fileID: 2100000, guid: 1dcfa47452fe82f429f6ebbdb2075d27, type: 2}
   - {fileID: 2100000, guid: eff8c375ca6f7f6419290d59f9d3acbc, type: 2}
   - {fileID: 2100000, guid: 762e31b3252a6e24e96b1b601f667f91, type: 2}
+  switchSkyboxAction: {fileID: 0}
