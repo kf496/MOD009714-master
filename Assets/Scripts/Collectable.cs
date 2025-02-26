@@ -14,6 +14,8 @@ public class Collectable : MonoBehaviour
 
     private Vector3 targetPosition; // Final position to zip toward
 
+    public CollectibleCounter collectibleCounter;
+
     void Start()
     {
         // Get or add the AudioSource component
@@ -54,6 +56,8 @@ public class Collectable : MonoBehaviour
 
             // Start the zip, shrink, and spin effect
             StartCoroutine(ZipShrinkAndSpin());
+
+            collectibleCounter.UpdateScore(-1f);
         }
     }
 
