@@ -6,6 +6,9 @@ public class PlayerHP : MonoBehaviour
     private float currentHealth;
     public HealthBar healthBar;
 
+    public GameOver gameOverScreen;
+    private bool isDead;
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -18,7 +21,7 @@ public class PlayerHP : MonoBehaviour
         Debug.Log("Player Health: " + currentHealth);
         healthBar.SetHealth(currentHealth);
 
-        if (currentHealth <= 0)
+        if (currentHealth <= 0 && !isDead)
         {
             Die();
         }
@@ -26,6 +29,8 @@ public class PlayerHP : MonoBehaviour
 
     void Die()
     {
+        isDead = true;
+        gameOverScreen.gameOver();
         Debug.Log("Player Died!");
         // Add death effects or game over logic here
         Destroy(gameObject); // For now, destroy the player on death
@@ -35,7 +40,7 @@ public class PlayerHP : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Backspace)) 
         {
-            TakeDamage(10);
+            TakeDamage(20);
         }
     }
 }
