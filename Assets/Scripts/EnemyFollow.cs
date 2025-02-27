@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyFollow : MonoBehaviour
 {
     public Transform player;               // Reference to the player's transform
-    public float speed = 5f;               // Enemy movement speed
+    public float speed = 5;               // Enemy movement speed
     public float rotationSpeed = 2f;       // Rotation speed toward the player
     public GameObject bulletPrefab;        // Prefab for the bullet
     public Transform firePoint;            // Position where bullets spawn

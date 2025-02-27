@@ -137,6 +137,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectSound: {fileID: 8300000, guid: f6888869aef1e9443bd943f015e0b54c, type: 3}
+  shrinkDuration: 1
+  spinSpeed: 360
+  collectibleCounter: {fileID: 554009132153636801, guid: 0ce6f31bc0f5ba2488f0b7e7254fe9a2,
+    type: 3}
 --- !u!54 &6743053572643817309
 Rigidbody:
   m_ObjectHideFlags: 0

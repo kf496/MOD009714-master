@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 [RequireComponent(typeof(AudioSource))]
 [RequireComponent(typeof(BoxCollider))]
@@ -14,7 +15,7 @@ public class Collectable : MonoBehaviour
 
     private Vector3 targetPosition; // Final position to zip toward
 
-    public CollectibleCounter collectibleCounter;
+
 
     void Start()
     {
@@ -56,8 +57,6 @@ public class Collectable : MonoBehaviour
 
             // Start the zip, shrink, and spin effect
             StartCoroutine(ZipShrinkAndSpin());
-
-            collectibleCounter.UpdateScore(-1f);
         }
     }
 
