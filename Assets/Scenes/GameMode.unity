@@ -1243,8 +1243,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 58.5, y: 22.1}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 73.7, y: -3.2}
+  m_SizeDelta: {x: 239.9621, y: 139.8951}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1279435004
 MonoBehaviour:
@@ -1277,7 +1277,11 @@ MonoBehaviour:
     A - LEFT
 
     D
-    - RIGHT'
+    - RIGHT
+
+    TURN:
+
+    Q/E'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d7283a7910629ce409a96e8b5a8caa81, type: 2}
   m_sharedMaterial: {fileID: -4924426426624278528, guid: d7283a7910629ce409a96e8b5a8caa81,
@@ -1305,10 +1309,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18
-  m_fontSizeBase: 20
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
@@ -1814,6 +1818,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1482445965 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2995680362067077426, guid: c465c0341c1173545aa94e3e72b8d0ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 5189620212699082751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1506260860
 GameObject:
   m_ObjectHideFlags: 0
@@ -2513,13 +2523,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1955205788}
-  - component: {fileID: 1955205789}
   - component: {fileID: 1955205790}
   - component: {fileID: 1955205791}
   - component: {fileID: 1955205792}
-  - component: {fileID: 1955205793}
   - component: {fileID: 1955205794}
   - component: {fileID: 1955205795}
+  - component: {fileID: 1955205796}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2542,25 +2551,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1955205789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955205787}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1043b9f5d4ad0024892335c089f2659d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  toggleCameras: []
-  manuallyPlacedCamera: {fileID: 1506260864}
-  iglooCameraPath: IglooManager/Igloo(Clone)/Head/DefaultCamera/Camera
-  planeCameraTransform: {fileID: 0}
-  balloonCameraTransform: {fileID: 1959249019}
-  switchCameraAction: {fileID: -4359696285434923681, guid: 5a9e47b6b7df2574085b208429663347,
-    type: 3}
 --- !u!114 &1955205790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2688,19 +2678,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   resetActionReference: {fileID: -34833470766430572, guid: 5a9e47b6b7df2574085b208429663347,
     type: 3}
---- !u!114 &1955205793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955205787}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd33e9115ecee40468216dc6beb874b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  planeCamera: {fileID: 0}
 --- !u!114 &1955205794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2729,6 +2706,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 1716849888}
+--- !u!114 &1955205796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955205787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d79a3786a7778b489af1c58590bdf29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 1482445965}
+  numberOfEnemies: 10
+  minRadius: 40
+  maxRadius: 100
 --- !u!1 &1959249018
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ public class Bullet : MonoBehaviour
 {
     public float damage = 20f;  // Damage the bullet deals
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
         // Check if the bullet hits the player
         PlayerHP playerHealth = collision.gameObject.GetComponent<PlayerHP>();

@@ -58,8 +58,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pitchSpeed: 150
   rollSpeed: 150
-  yawSpeed: 50
-  throttleSpeed: 20
+  yawSpeed: 150
+  throttleSpeed: 150
   maxSpeed: 150
   minSpeed: 10
   pitchRollAction: {fileID: -6107559237944394798, guid: 5a9e47b6b7df2574085b208429663347,
@@ -239,6 +239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  healthBar: {fileID: 0}
+  gameOverScreen: {fileID: 0}
 --- !u!1 &995069020342694913
 GameObject:
   m_ObjectHideFlags: 0
