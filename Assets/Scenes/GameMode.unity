@@ -3251,6 +3251,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 265005597211822024, guid: 94d8d8367cb3d85499b2ea0d7102ed71,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 349314971639620416, guid: 94d8d8367cb3d85499b2ea0d7102ed71,
         type: 3}
       propertyPath: originPoint
