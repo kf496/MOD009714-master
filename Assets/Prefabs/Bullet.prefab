@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8063617886434936835}
   - component: {fileID: 9150989416621809233}
   - component: {fileID: 2549709764216592186}
-  - component: {fileID: 21527985115174232}
   - component: {fileID: -586150534083908661}
   - component: {fileID: -5482567066640460239}
+  - component: {fileID: 3578166260387201387}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -86,29 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &21527985115174232
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4079531284953418463}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 6.183949
-  m_Height: 18.597988
-  m_Direction: 1
-  m_Center: {x: 0.17691346, y: 0.7535435, z: -1.0987962}
 --- !u!54 &-586150534083908661
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -149,3 +126,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 20
+--- !u!136 &3578166260387201387
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079531284953418463}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.6395084
+  m_Height: 2.3694487
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}

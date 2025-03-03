@@ -1,3 +1,4 @@
+using Klak.Ndi.Interop;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -6,6 +7,8 @@ public class EnemySpawner : MonoBehaviour
     public int numberOfEnemies = 10; // Number of collectables to spawn
     public float minRadius = 40f; // Minimum distance from the center
     public float maxRadius = 100f; // Maximum distance from the center
+
+    public EnemyFollow enemyFollow;
 
     void Start()
     {
@@ -18,6 +21,7 @@ public class EnemySpawner : MonoBehaviour
         {
             Vector3 randomPosition = GenerateRandomPosition();
             Instantiate(enemyPrefab, randomPosition, Quaternion.identity);
+            enemyFollow.speed = Random.Range(4, 8);
         }
     }
 
