@@ -3,6 +3,12 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float damage = 20f;  // Damage the bullet deals
+    public AudioSource audioSource;
+
+    void start()
+    {
+        audioSource.Play();
+    }
 
     void OnTriggerEnter(Collider collision)
     {

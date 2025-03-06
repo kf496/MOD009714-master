@@ -8,6 +8,7 @@ public class PlayerHP : MonoBehaviour
 
     public GameOver gameOverScreen;
     private bool isDead;
+    public CrashAudio crashAudio;
 
     void Start()
     {
