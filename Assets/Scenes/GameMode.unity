@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 5807831b4c08a644782ad88fd66bd128, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: e2fdffe32c681eb4493effbfb7ea64c0, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -784,6 +784,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703578799}
   m_CullTransparentMesh: 1
+--- !u!4 &772987611 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7954733583621853553, guid: c465c0341c1173545aa94e3e72b8d0ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 5189620212699082751}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &869778358 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 934248280987073058, guid: 7400535bcb7bd46409fc07bf0c901c3d,
@@ -3343,6 +3349,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1854214200673726122, guid: c465c0341c1173545aa94e3e72b8d0ff,
         type: 3}
+      propertyPath: firePoint
+      value: 
+      objectReference: {fileID: 772987611}
+    - target: {fileID: 1854214200673726122, guid: c465c0341c1173545aa94e3e72b8d0ff,
+        type: 3}
       propertyPath: bulletSpeed
       value: 150
       objectReference: {fileID: 0}
@@ -3356,6 +3367,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4548275107531382969, guid: c465c0341c1173545aa94e3e72b8d0ff,
+        type: 3}
+      propertyPath: m_Name
+      value: firepoint
       objectReference: {fileID: 0}
     - target: {fileID: 6440652075752210909, guid: c465c0341c1173545aa94e3e72b8d0ff,
         type: 3}
@@ -3391,6 +3407,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 265005597211822024, guid: 94d8d8367cb3d85499b2ea0d7102ed71,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 265005597211822024, guid: 94d8d8367cb3d85499b2ea0d7102ed71,
         type: 3}
