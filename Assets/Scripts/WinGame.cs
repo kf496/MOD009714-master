@@ -14,6 +14,7 @@ public class WinGame : MonoBehaviour
     void Start()
     {
         pic.SetActive(false);
+        Time.timeScale = 1;
     }
 
 
