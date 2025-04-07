@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3959808, g: 0.3594971, b: 0.42485332, a: 1}
+  m_IndirectSpecularColor: {r: 0.110779576, g: 0.19259128, b: 0.14306958, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: aa148307c43a1c1469c509fee493532d,
+  m_LightingDataAsset: {fileID: 112000000, guid: cab441d9c3f918c4aa61c97edb51a06a,
     type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
@@ -2770,6 +2770,8 @@ MonoBehaviour:
   numberOfEnemies: 10
   minRadius: 40
   maxRadius: 100
+  timer: 0
+  lastTime: 0
   enemyFollow: {fileID: 1482445966}
 --- !u!1 &1959249018
 GameObject:
