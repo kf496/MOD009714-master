@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Start Menu.unity
     guid: 9723a605946065844825ddb50d4ff3c7
   - enabled: 1
-    path: Assets/Scenes/GameMode.unity
+    path: Assets/Scenes/Spaceship Game.unity
     guid: a5c471acf06028a4e83255a26bd8b2b4
+  - enabled: 1
+    path: Assets/Scenes/Hard Mode.unity
+    guid: 8119f3a7c558f3a4c8f209f624e2efdc
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05

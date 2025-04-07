@@ -6,10 +6,17 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public void LoadSceneByName(string sceneName)
+    {
+            SceneManager.LoadScene(sceneName = "Hard Mode");
+    }
+
 public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //loads next scene in queue
     }
+
+
 public void QuitGame()
     {
         Debug.Log("QUIT");

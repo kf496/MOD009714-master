@@ -1,18 +1,43 @@
 using Klak.Ndi.Interop;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab; // The collectable prefab to spawn
-    public int numberOfEnemies = 10; // Number of collectables to spawn
+    public int numberOfEnemies = 1; // Number of collectables to spawn
     public float minRadius = 40f; // Minimum distance from the center
     public float maxRadius = 100f; // Maximum distance from the center
+    public float timer = 0f;
+    public float lastTime = 0f;
 
     public EnemyFollow enemyFollow;
+    private string sceneName;
 
-    void Start()
+    private void Start()
     {
-        SpawnEnemies();
+        sceneName = SceneManager.GetActiveScene().name;
+    }
+    void Update()
+    {
+        if (sceneName == "Spaceship Game")
+        {
+
+            timer = Mathf.FloorToInt(Time.time);
+            if (timer % 10 == 0 && lastTime != timer)
+            {
+                lastTime = timer;
+                SpawnEnemies();
+            }
+        }
+        if (sceneName == "Hard Mode")
+        {
+            timer = Mathf.FloorToInt(Time.time);
+            if (timer % 10 == 0)
+            {
+                SpawnEnemies();
+            }
+        }
     }
 
     void SpawnEnemies()
